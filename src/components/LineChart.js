@@ -46,7 +46,7 @@ const LineChart = ({ data, chartName }) => {
 
   useEffect(() => {
     setHiddenDatasets(sortedKeys.slice(10))
-  }, [data, sortedKeys])
+  }, [data])
 
 
   
