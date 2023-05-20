@@ -1,6 +1,7 @@
 {
   "name": "greenhouse",
   "version": "0.1.0",
+  "homepage": "https://mtrejo0.github.io/greenhouse-emissions",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
