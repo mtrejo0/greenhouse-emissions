@@ -50,9 +50,7 @@ const LineChart = ({ data, chartName }) => {
   }, [data])
 
 
-  
 
-  console.log(sortedKeys)
 
 
 
@@ -79,7 +77,18 @@ const LineChart = ({ data, chartName }) => {
   const options = {
     responsive: true,
     scales: {
+      x: {
+        title: {
+          display: true,
+          text: "Year"
+        },
+        type: 'linear',
+      },
       y: {
+        title: {
+          display: true,
+          text: "Tons of CO2"
+        },
         type: 'linear',
         beginAtZero: true,
       },
@@ -89,25 +98,12 @@ const LineChart = ({ data, chartName }) => {
         display: false, // Hide the legend
       },
     },
-    elements: {
-      point: {
-        pointLabel: ({ y }) => y[y.length - 1].toString(), // Display label on the last point
-        font: {
-          size: 12,
-        },
-        borderWidth: 1,
-        borderColor: "rgba(1, 1, 1, 0.5)",
-        backgroundColor: "white",
-        padding: 4,
-        borderRadius: 4,
-      },
-    },
   };
 
   return (
 
     <>
-    <h3>{chartName}</h3>
+    
     <Grid container>
       
     <Grid item xs={2}>
@@ -124,6 +120,7 @@ const LineChart = ({ data, chartName }) => {
 
     <Grid item xs={10} sx={{padding: "32px"}}>
       <div style={{ position: "sticky", top: "50%", transform: "translateY(-50%)" }}>
+        <h3>{chartName}</h3>
         <Line data={chartData} options={options} />
       </div>
     </Grid>

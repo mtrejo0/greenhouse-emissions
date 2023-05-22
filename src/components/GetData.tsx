@@ -71,7 +71,7 @@ export default function GetData() {
   return (
     <Box sx={{display: "flex", alignItems: "center", flexDirection: "column"}}>
 
-      {countriesData && <LineChart data={countriesData} chartName="Tons of CO2:" />}
+      {countriesData && <LineChart data={countriesData} chartName="CO2 Emissions by Country" />}
 
     </Box>
   );
