@@ -82,7 +82,6 @@ const LineChart = ({ data, chartName }) => {
           display: true,
           text: "Year"
         },
-        type: 'linear',
       },
       y: {
         title: {
