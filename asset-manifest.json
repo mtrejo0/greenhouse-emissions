@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.15efa330.js",
-    "index.html": "/index.html",
-    "main.15efa330.js.map": "/static/js/main.15efa330.js.map"
+    "main.js": "/greenhouse-emissions/static/js/main.15efa330.js",
+    "index.html": "/greenhouse-emissions/index.html",
+    "main.15efa330.js.map": "/greenhouse-emissions/static/js/main.15efa330.js.map"
   },
   "entrypoints": [
     "static/js/main.15efa330.js"
