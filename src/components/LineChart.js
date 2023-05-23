@@ -106,8 +106,13 @@ const LineChart = ({ data, chartName }) => {
     <Grid container>
       
     <Grid item xs={2}>
+
+      <Box sx={{ mt: 2 }}>
+        <a href="https://stats.oecd.org/Index.aspx?DataSetCode=AIR_GHG#">Dataset</a>
+      </Box>
       
-      <Box sx={{ border: "1px solid black" }}>
+      <Box sx={{ border: "1px solid black", mt: 4 }}>
+        
         {sortedKeys.map((key, i) => (
           <Box key={key} sx={{ borderBottom: "1px solid black" }}>
             <Checkbox onClick={() => handleDatasetToggle(key)} checked={!hiddenDatasets.includes(key)} />

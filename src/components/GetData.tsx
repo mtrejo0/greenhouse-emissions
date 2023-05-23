@@ -19,6 +19,7 @@ export default function GetData() {
       const csvData = await response.text();
       const jsonData = await csvtojson().fromString(csvData);
 
+      console.log(jsonData)
       setData(jsonData);
     };
 
@@ -72,6 +73,7 @@ export default function GetData() {
 
       {countriesData && <LineChart data={countriesData} chartName="CO2 Emissions by Country" />}
 
+      <a href="https://stats.oecd.org/Index.aspx?DataSetCode=AIR_GHG#">Dataset</a>
     </Box>
   );
 }
